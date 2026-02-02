@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stayle.css" />
+    <script src="index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <article>
+        <h1>Intelligence Hub</h1>
+        <p>Secure Field Operations</p>
+      </article>
+      <div>
+        <button><a href="index.html">Reports</a></button>
+        <button><a href="Dashboard.html">Dashboard</a></button>
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <p>Intelligence Report Submission</p>
+        <p>Secure field intelligence collection system</p>
+        <form action="" method="post" id="form">
+          <fieldset>
+            <label for="name">Agent Name:</label>
+            <input type="text" name="name" id="name" />
+          </fieldset>
+
+          <fieldset>
+            <label for="password">Agent Code:</label>
+            <input type="password" name="password" id="password" />
+          </fieldset>
+          <fieldset>
+            <label for="target">Target:</label>
+            <input type="text" name="target" id="target" />
+          </fieldset>
+          <fieldset>
+            <label for="text">intellignce lnformation:</label>
+            <textarea name="text" id="textarea"></textarea>
+          </fieldset>
+          <button>Send</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -36,3 +36,99 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+
+
+#reportsContainer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.card {
+  background: #0f172a; /* כחול־כהה */
+  color: #e5e7eb;
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* אפקט ריחוף */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* כותרת Target */
+.card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+/* טקסט */
+.card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* זמן */
+.card small {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* אזור כפתורים */
+.card button {
+  margin-top: 0.8rem;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+/* Edit */
+.card .edit-btn {
+  background: #2563eb;
+  color: #fff;
+}
+
+.card .edit-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.03);
+}
+
+/* Delete */
+.card .delete-btn {
+  background: #dc2626;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.card .delete-btn:hover {
+  background: #b91c1c;
+  transform: scale(1.03);
+}
+
+/* רספונסיביות */
+@media (max-width: 480px) {
+  #reportsContainer{
+  grid-template-columns: repeat(1,1fr);
+
+  }
+  .card {
+    padding: 1rem;
+
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,25 @@
+.chest {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.inventory {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inventory.hidden {
+  display: none;
+}
+
+.window {
+  width: 400px;
+  height: 250px;
+  background: #777;
+  border: 4px solid #444;
+}
